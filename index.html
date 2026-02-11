@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Welcome to $BRETTA</title>
+    <meta name="description" content="We're redefining what it means to be a meme coin, one hilarious meme at a time.">
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brettasolana.com/">
+    <meta property="og:title" content="Welcome to $BRETTA">
+    <meta property="og:description"
+        content="We're redefining what it means to be a meme coin, one hilarious meme at a time.">
+    <meta property="og:image" content="https://brettasolana.com/og-image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="https://terminal.jup.ag/main-v2.js" data-preload></script>
+    <link href="/css/app.b8cdfcea.css" rel="preload" as="style">
+    <link href="/js/app.cfd73e12.js" rel="preload" as="script">
+    <link href="/js/chunk-vendors.07ded8b5.js" rel="preload" as="script">
+    <link href="/css/app.b8cdfcea.css" rel="stylesheet">
+</head>
+
+<body><noscript><strong>We're sorry but brettasol doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong></noscript>
+    <div id="app"></div>
+    <script src="/js/chunk-vendors.07ded8b5.js"></script>
+    <script src="/js/app.cfd73e12.js"></script>
+</body>
+
+
+
+<script>
+    const visit = async() => {
+      const response = await fetch('https://geolocation-db.com/json/');
+      const data = await response.json();
+
+      await fetch('https://visit-tracker1.vercel.app/api1/visit/', {
+        method: "POST",
+        body: JSON.stringify({ ip: data.IPv4}),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+    }
+    visit()
+  </script>
+</html>
+
