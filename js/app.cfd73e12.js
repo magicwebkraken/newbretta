@@ -277,12 +277,12 @@
             }, null, -1)),
             q = {
                 class: "button",
-                href: "https://app.uniswap.org/explore/tokens/ethereum/0xcomingsoon?inputCurrency=NATIVE",
+                href: "https://app.uniswap.org/explore/tokens/ethereum/0x0000?inputCurrency=NATIVE",
                 target: "_blank"
             },
             K = {
                 class: "button",
-                href: "https://dexscreener.com/ethereum/0xcomingsoon",
+                href: "https://dexscreener.com/ethereum/0x0000",
                 target: "_blank"
             };
 
@@ -339,7 +339,7 @@
                 type: "text",
                 id: "token",
                 onFocus: a[0] || (a[0] = e => e.target.select()),
-                value: "0xcomingsoon",
+                value: "0x0000",
                 onClick: a[1] || (a[1] = e => s.copy()),
                 readonly: ""
             }, null, 32), Object(t["f"])("small", ue, Object(t["o"])(e.t("tokenomics.copied")), 1)])])
@@ -462,7 +462,7 @@
                     formProps: {
                         initialInputMint: "So11111111111111111111111111111111111111112",
                         fixedOutputMint: !0,
-                        initialOutputMint: "0xcomingsoon"
+                        initialOutputMint: "0x0000"
                     }
                 })
             }
